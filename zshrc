@@ -1,70 +1,70 @@
 ZSH=$HOME/.oh-my-zsh
 
 #Loading custom fonts
-source ~/fonts/*.sh
+# source ~/fonts/*.sh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # General config
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+# POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
 # Prompts
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh context dir virtualenv vcs)
-else
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir virtualenv vcs)
-fi
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator battery custom_now_playing time)
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_SHORTEN_DELIMITER=..
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\uE0B4'
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\uE0B6'
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+#   POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh context dir virtualenv vcs)
+# else
+#   POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir virtualenv vcs)
+# fi
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator battery background_jobs history time)
+# POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+# POWERLEVEL9K_SHORTEN_DELIMITER=..
+# POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\uE0B4'
+# POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\uE0B6'
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰\uF460\uF460\uF460 "
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰\uF460\uF460\uF460 "
 
 # Custom segment "now playing"
-POWERLEVEL9K_CUSTOM_NOW_PLAYING='~/code/OliNott/dotfiles/bin'
+# POWERLEVEL9K_CUSTOM_NOW_PLAYING='~/code/OliNott/dotfiles/bin'
 
 # Colors
-POWERLEVEL9K_VIRTUALENV_BACKGROUND=107
-POWERLEVEL9K_VIRTUALENV_FOREGROUND='white'
-POWERLEVEL9K_CUSTOM_NOW_PLAYING_BACKGROUND='blue'
-POWERLEVEL9K_CUSTOM_NOW_PLAYING_FOREGROUND='black'
-POWERLEVEL9K_OS_ICON_BACKGROUND='white'
-POWERLEVEL9K_OS_ICON_FOREGROUND='black'
-POWERLEVEL9K_TIME_BACKGROUND='white'
-POWERLEVEL9K_TIME_FOREGROUND='black'
+# POWERLEVEL9K_VIRTUALENV_BACKGROUND=107
+# POWERLEVEL9K_VIRTUALENV_FOREGROUND='white'
+# POWERLEVEL9K_CUSTOM_NOW_PLAYING_BACKGROUND='blue'
+# POWERLEVEL9K_CUSTOM_NOW_PLAYING_FOREGROUND='black'
+# POWERLEVEL9K_OS_ICON_BACKGROUND='white'
+# POWERLEVEL9K_OS_ICON_FOREGROUND='black'
+# POWERLEVEL9K_TIME_BACKGROUND='white'
+# POWERLEVEL9K_TIME_FOREGROUND='black'
 
 # Battery colors
-POWERLEVEL9K_BATTERY_CHARGING='107'
-POWERLEVEL9K_BATTERY_CHARGED='blue'
-POWERLEVEL9K_BATTERY_LOW_THRESHOLD='50'
-POWERLEVEL9K_BATTERY_LOW_COLOR='red'
-POWERLEVEL9K_BATTERY_CHARGED_BACKGROUND='blue'
-POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND='107'
-POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_LOW_BACKGROUND='red'
-POWERLEVEL9K_BATTERY_LOW_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND='214'
+# POWERLEVEL9K_BATTERY_CHARGING='107'
+# POWERLEVEL9K_BATTERY_CHARGED='blue'
+# POWERLEVEL9K_BATTERY_LOW_THRESHOLD='50'
+# POWERLEVEL9K_BATTERY_LOW_COLOR='red'
+# POWERLEVEL9K_BATTERY_CHARGED_BACKGROUND='blue'
+# POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND='white'
+# POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND='107'
+# POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND='white'
+# POWERLEVEL9K_BATTERY_LOW_BACKGROUND='red'
+# POWERLEVEL9K_BATTERY_LOW_FOREGROUND='white'
+# POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND='white'
+# POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND='214'
 
 # VCS colors
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='cyan'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='black'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='white'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='red'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
+# POWERLEVEL9K_VCS_CLEAN_FOREGROUND='cyan'
+# POWERLEVEL9K_VCS_CLEAN_BACKGROUND='black'
+# POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='white'
+# POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='orange'
+# POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='red'
+# POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(gitfast last-working-dir common-aliases sublime history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -94,3 +94,23 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# Auto completion
+autoload -Uz compinit
+compinit
+
+# Syntax highlightinh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Colorise the top Tabs of Iterm2 with the same color as background
+# Just change the 18/26/33 wich are the rgb values
+echo -e "\033]6;1;bg;red;brightness;18\a"
+echo -e "\033]6;1;bg;green;brightness;26\a"
+echo -e "\033]6;1;bg;blue;brightness;33\a"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=/opt/homebrew/bin:$PATH
+eval $(starship init zsh)
